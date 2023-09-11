@@ -17,8 +17,8 @@
 // Create 'computerSelection' Function to make Computer picks at random between ‘Rock’, ‘Paper’ or ‘Scissors’ in the 'gameChoices'
 //Return and display the output of the Computer choice Selection using and User's selection
 //invoke 'computerSelection' and 'playerSelection'
-//Play the game once and comparing the 'computerSelection' and 'playerSelection' display the winner
-//Create Function 'game' to play 5 rounds using loop
+//Play the game and comparing the 'computerSelection' and 'playerSelection' display the winner
+//Create Function 'game' to take two parameters - the playerSelection and computerSelection, and play 5 rounds using loop
 //Display the winner
 
 /***********************************************************/
@@ -34,3 +34,7 @@ console.log(
 );
 
 /***********************************************************/
+
+/*************************Implimentatio**********************************/
+//-Create an array of 'gameChopices'
+let gameChoices = ["rock", "paper", "scissors"];
