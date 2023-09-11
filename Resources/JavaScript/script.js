@@ -38,3 +38,10 @@ console.log(
 /*************************Implimentatio**********************************/
 //-Create an array of 'gameChopices'
 let gameChoices = ["rock", "paper", "scissors"];
+
+//Create Function 'playerSelection' to Prompt the player to select from the 'gameChoices' and store it and return it
+function playerSelection() {
+  let userInput = prompt(
+    "Select from 'Rock', 'Paper' or 'Scissors'!"
+  ).toLowerCase();
+}
