@@ -20,3 +20,17 @@
 //Play the game once and comparing the 'computerSelection' and 'playerSelection' display the winner
 //Create Function 'game' to play 5 rounds using loop
 //Display the winner
+
+/***********************************************************/
+
+/******************Game Rules:******************/
+console.log("Game Rules!!!");
+console.log("1. Rock beats Scissors, so, Rock wins:");
+console.log("2. Scissors beats Paper, so, Scissors wins:");
+console.log("3. Paper beats Rock (Paper wins:");
+
+console.log(
+  "4. If both players choose the same element, it's a tie or a draw, and no one wins."
+);
+
+/***********************************************************/
