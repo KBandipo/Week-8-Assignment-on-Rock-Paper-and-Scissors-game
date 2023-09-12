@@ -64,4 +64,11 @@ function playerSelection() {
 function getComputerChoice() {
   let choice = Math.floor(Math.random() * gameChoices.length);
   // console.log("Computer picked", gameChoices[choice]);
+  if (gameChoices[choice] === "rock") {
+    console.log("Computer selected Rock");
+  } else if (gameChoices[choice] === "paper") {
+    console.log("Computer selected Paper");
+  } else {
+    console.log("Computer selected Scissors");
+  }
 }
