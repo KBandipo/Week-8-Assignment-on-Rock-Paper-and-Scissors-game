@@ -75,6 +75,9 @@ function round() {
       //use i++ to make the round to be in same position
       i--;
     }
+    console.log(
+      "/*************************************************************************/"
+    );
   }
   // Final condition to display the winner
   if (userScore > computerScore) {
