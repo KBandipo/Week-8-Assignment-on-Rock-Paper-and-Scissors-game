@@ -145,6 +145,12 @@ function round() {
       i--;
     }
   }
+  // Final condition to display the winner
+  if (userScore > computerScore) {
+    console.log(`YOU WON🏆 WITH SCORE ${userScore} TO ${computerScore}`);
+  } else {
+    console.log(`COMPUTER WON🏆 WITH SCORE ${computerScore} TO ${userScore}`);
+  }
 }
 
 round();
