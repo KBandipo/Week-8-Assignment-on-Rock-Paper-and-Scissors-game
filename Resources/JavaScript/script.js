@@ -41,7 +41,7 @@ console.log(
 let gameChoices = ["rock", "paper", "scissors"];
 
 //Create Function 'playerSelection' to Prompt the player to select from the 'gameChoices' and store it and return it
-function playerSelection() {
+function playerChoice() {
   //make the choices of th player case insensitive
   let userInput = prompt(
     "Select from 'Rock', 'Paper' or 'Scissors'!"
@@ -58,7 +58,9 @@ function playerSelection() {
     console.log("Invalid Selection!");
     console.log("Select from 'Rock', 'Paper' or 'Scissors'!");
   }
+  return userInput;
 }
+let player = playerChoice();
 
 //Create 'computerSelection' Function to make Computer picks at random between ‘Rock’, ‘Paper’ or ‘Scissors’ in the 'gameChoices'
 function getComputerChoice() {
@@ -71,8 +73,32 @@ function getComputerChoice() {
   } else {
     console.log("Computer selected Scissors");
   }
+  return gameChoices[choice];
 }
 
 //Invoke 'getComputerChoice' and 'playerSelection'
-playerSelection();
-getComputerChoice();
+
+let comp = getComputerChoice();
+
+//Play singleRound
+function singleRound(playerSelection, computerSelection) {
+  if (playerSelection === computerSelection) {
+    console.log(`It's a tie!`);
+  } else if (
+    (playerSelection === "rock" && computerSelection === "scissors") ||
+    (playerSelection === "paper" && computerSelection === "rock") ||
+    (playerSelection === "scissors" && computerSelection === "paper")
+  ) {
+    console.log(`You Win! ${playerSelection} beats ${computerSelection}`);
+  } else if (
+    (computerSelection === "rock" && playerSelection === "scissors") ||
+    (computerSelection === "paper" && playerSelection === "rock") ||
+    (computerSelection === "scissors" && playerSelection === "paper")
+  ) {
+    console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
+  } else {
+    console.log(
+      `${playerSelection} is an invalid Input. Select from 'Rock', 'Paper' or 'Scissors'!`
+    );
+  }
+}
