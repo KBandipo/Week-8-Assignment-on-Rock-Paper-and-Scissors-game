@@ -118,6 +118,31 @@ function round() {
 
   for (let i = 0; i < 5; i++) {
     let game = singleRound();
+    if (game === "Win") {
+      userScore++;
+      round++;
+      console.log(
+        `ROUND: ${round}, SCORE: USERSCORE ${userScore}: ${computerScore} COMPUTER`
+      );
+    } else if (game === "Lose") {
+      computerScore++;
+      round++;
+      console.log(
+        `ROUND: ${round}, SCORE: USERSCORE ${userScore}: ${computerScore} COMPUTER`
+      );
+    } else if (game === "Tie") {
+      round++;
+      console.log(
+        `ROUND: ${round}, SCORE: USERSCORE ${userScore}: ${computerScore} COMPUTER`
+      );
+    } else {
+      console.log(
+        `INVALID INPUT, To play ROUND: ${
+          round + 1
+        }, Select from Rock, Paper and Scissors `
+      );
+      i--;
+    }
   }
 }
 
