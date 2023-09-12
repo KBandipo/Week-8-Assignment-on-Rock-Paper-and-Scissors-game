@@ -1,4 +1,6 @@
 //Play singleRound
+import playerChoice from "./playerChoice.js";
+import getComputerChoice from "./getComputerChoice.js";
 export default function singleRound() {
   let playerSelection = playerChoice();
   let computerSelection = getComputerChoice();

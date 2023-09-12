@@ -38,8 +38,7 @@ console.log(
 /***********************************************************/
 
 /*************************Implimentatio**********************************/
-import playerChoice from "./playerChoice.js";
-import getComputerChoice from "./getComputerChoice.js";
+
 import singleRound from "./singleRound.js";
 
 /****************************************************************/
