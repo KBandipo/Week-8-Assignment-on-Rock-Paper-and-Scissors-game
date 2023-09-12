@@ -38,8 +38,6 @@ console.log(
 /***********************************************************/
 
 /*************************Implimentatio**********************************/
-//-Create an array of 'gameChopices'
-let gameChoices = ["rock", "paper", "scissors"];
 
 //Create Function 'playerSelection' to Prompt the player to select from the 'gameChoices' and store it and return it
 function playerChoice() {
@@ -61,25 +59,8 @@ function playerChoice() {
   }
   return userInput;
 }
-// let playerSelection = playerChoice();
 
-//Create 'computerSelection' Function to make Computer picks at random between ‘Rock’, ‘Paper’ or ‘Scissors’ in the 'gameChoices'
-function getComputerChoice() {
-  let choice = Math.floor(Math.random() * gameChoices.length);
-  // console.log("Computer picked", gameChoices[choice]);
-  if (gameChoices[choice] === "rock") {
-    console.log("Computer selected Rock");
-  } else if (gameChoices[choice] === "paper") {
-    console.log("Computer selected Paper");
-  } else {
-    console.log("Computer selected Scissors");
-  }
-  return gameChoices[choice];
-}
-
-//Invoke 'getComputerChoice' and 'playerSelection'
-
-// let computerSelection = getComputerChoice();
+import getComputerChoice from "./getComputerChoice.js";
 
 //Play singleRound
 function singleRound() {
