@@ -47,7 +47,7 @@ function playerSelection() {
     "Select from 'Rock', 'Paper' or 'Scissors'!"
   ).toLowerCase();
 
-  //-Create a condition to return the seletion of player
+  //-Create a conditions to return the seletion of player
   if (userInput === "rock") {
     console.log("You selected Rock");
   } else if (userInput === "paper") {
@@ -58,4 +58,10 @@ function playerSelection() {
     console.log("Invalid Selection!");
     console.log("Select from 'Rock', 'Paper' or 'Scissors'!");
   }
+}
+
+//Create 'computerSelection' Function to make Computer picks at random between ‘Rock’, ‘Paper’ or ‘Scissors’ in the 'gameChoices'
+function getComputerChoice() {
+  let choice = Math.floor(Math.random() * gameChoices.length);
+  // console.log("Computer picked", gameChoices[choice]);
 }
