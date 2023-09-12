@@ -111,6 +111,10 @@ function singleRound() {
 }
 
 /****************************************************************/
-function round() {}
+function round() {
+  let round = 0;
+  let userScore = 0;
+  let computerScore = 0;
+}
 
-//round();
+round();
