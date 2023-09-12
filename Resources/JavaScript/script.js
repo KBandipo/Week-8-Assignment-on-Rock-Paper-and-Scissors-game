@@ -141,6 +141,7 @@ function round() {
           round + 1
         }, Select from Rock, Paper and Scissors `
       );
+      //use i++ to make the round to be in same position
       i--;
     }
   }
