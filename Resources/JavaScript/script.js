@@ -29,11 +29,12 @@ console.log("Game Rules!!!");
 console.log("1. Rock beats Scissors, so, Rock wins:");
 console.log("2. Scissors beats Paper, so, Scissors wins:");
 console.log("3. Paper beats Rock (Paper wins:");
-
 console.log(
   "4. If both players choose the same element, it's a tie or a draw, and no one wins."
 );
-
+console.log(
+  "/**************************************************************************/"
+);
 /***********************************************************/
 
 /*************************Implimentatio**********************************/
@@ -60,7 +61,7 @@ function playerChoice() {
   }
   return userInput;
 }
-let player = playerChoice();
+// let playerSelection = playerChoice();
 
 //Create 'computerSelection' Function to make Computer picks at random between ‘Rock’, ‘Paper’ or ‘Scissors’ in the 'gameChoices'
 function getComputerChoice() {
@@ -78,24 +79,30 @@ function getComputerChoice() {
 
 //Invoke 'getComputerChoice' and 'playerSelection'
 
-let comp = getComputerChoice();
+// let computerSelection = getComputerChoice();
 
 //Play singleRound
-function singleRound(playerSelection, computerSelection) {
+function singleRound() {
+  let playerSelection = playerChoice();
+  let computerSelection = getComputerChoice();
+
   if (playerSelection === computerSelection) {
     console.log(`It's a tie!`);
+    return "Tie";
   } else if (
     (playerSelection === "rock" && computerSelection === "scissors") ||
     (playerSelection === "paper" && computerSelection === "rock") ||
     (playerSelection === "scissors" && computerSelection === "paper")
   ) {
     console.log(`You Win! ${playerSelection} beats ${computerSelection}`);
+    return "Win";
   } else if (
     (computerSelection === "rock" && playerSelection === "scissors") ||
     (computerSelection === "paper" && playerSelection === "rock") ||
     (computerSelection === "scissors" && playerSelection === "paper")
   ) {
     console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
+    return "Lose";
   } else {
     console.log(
       `${playerSelection} is an invalid Input. Select from 'Rock', 'Paper' or 'Scissors'!`
@@ -103,4 +110,4 @@ function singleRound(playerSelection, computerSelection) {
   }
 }
 //Call the singleRound Function
-singleRound(player, comp);
+singleRound();
