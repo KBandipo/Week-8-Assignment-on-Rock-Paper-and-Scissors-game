@@ -72,3 +72,7 @@ function getComputerChoice() {
     console.log("Computer selected Scissors");
   }
 }
+
+//Invoke 'getComputerChoice' and 'playerSelection'
+playerSelection();
+getComputerChoice();
