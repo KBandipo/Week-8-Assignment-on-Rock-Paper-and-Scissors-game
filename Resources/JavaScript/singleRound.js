@@ -1,6 +1,8 @@
-//Play singleRound
+//Import other functions
 import playerChoice from "./playerChoice.js";
 import getComputerChoice from "./getComputerChoice.js";
+
+//Play singleRound
 export default function singleRound() {
   let playerSelection = playerChoice();
   let computerSelection = getComputerChoice();
