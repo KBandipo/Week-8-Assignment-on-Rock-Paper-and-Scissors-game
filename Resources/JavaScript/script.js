@@ -102,3 +102,5 @@ function singleRound(playerSelection, computerSelection) {
     );
   }
 }
+//Call the singleRound Function
+singleRound(player, comp);
