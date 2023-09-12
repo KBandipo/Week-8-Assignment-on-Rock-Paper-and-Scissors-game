@@ -14,6 +14,7 @@
 //-Create an array of 'gameChopices'
 //Create Function 'playerSelection' to Prompt the player to select from the 'gameChoices' and store it and return it
 //-To make the choices of th player case insensitive
+//-Create a condition to return the seletion of player
 // Create 'computerSelection' Function to make Computer picks at random between ‘Rock’, ‘Paper’ or ‘Scissors’ in the 'gameChoices'
 //Return and display the output of the Computer choice Selection using and User's selection
 //invoke 'computerSelection' and 'playerSelection'
@@ -41,7 +42,20 @@ let gameChoices = ["rock", "paper", "scissors"];
 
 //Create Function 'playerSelection' to Prompt the player to select from the 'gameChoices' and store it and return it
 function playerSelection() {
+  //make the choices of th player case insensitive
   let userInput = prompt(
     "Select from 'Rock', 'Paper' or 'Scissors'!"
   ).toLowerCase();
+
+  //-Create a condition to return the seletion of player
+  if (userInput === "rock") {
+    console.log("You selected Rock");
+  } else if (userInput === "paper") {
+    console.log("You selected Paper");
+  } else if (userInput === "scissors") {
+    console.log("You selected Scissors");
+  } else {
+    console.log("Invalid Selection!");
+    console.log("Select from 'Rock', 'Paper' or 'Scissors'!");
+  }
 }
