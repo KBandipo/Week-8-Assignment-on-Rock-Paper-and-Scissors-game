@@ -28,7 +28,7 @@
 console.log("Game Rules!!!");
 console.log("1. Rock beats Scissors, so, Rock wins:");
 console.log("2. Scissors beats Paper, so, Scissors wins:");
-console.log("3. Paper beats Rock (Paper wins:");
+console.log("3. Paper beats Rock, so, Paper wins:");
 console.log(
   "4. If both players choose the same element, it's a tie or a draw, and no one wins."
 );
